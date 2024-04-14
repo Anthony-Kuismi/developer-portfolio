@@ -34,9 +34,9 @@ hr{
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 1rem;
     width: 100%;
     justify-content: end;
+    gap: 0.5rem;
 }
 
 .nav a{
@@ -46,14 +46,16 @@ hr{
     display: flex;
     align-items: center;
     padding: 0.25rem;
+    font-size: 1rem;
     font-family: "Roboto Slab", serif;
+    padding-right: 1rem;
 }
 
 .nav li.active{
     color: #C3073F;
 }
 
-.nav li:hover{
+.nav a:hover{
     text-decoration: underline;
 }
 
@@ -61,4 +63,9 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+ion-icon{
+    font-size: 1.5rem;
+    height: 100%;
 }

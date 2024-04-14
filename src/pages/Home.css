@@ -1,7 +1,26 @@
-.quote{
+.title{
     font-size: 5rem;
+    font-family: "Playfair Display", serif;
+}
+
+.subtitle{
+    font-size: 2rem;
+    font-family: "Roboto Slab", serif;
+}
+
+.message{
+    font-size: 1.5rem;
 }
 
 .home-container{
-    width: 70%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.main-container{
+    align-items: center;
+    width: 75%;
+    justify-content: center;
+    text-align: center;
 }
