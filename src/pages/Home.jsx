@@ -10,6 +10,9 @@ export default function Home(){
                     Computer Science BS & Mathematics Minor @University of Minnesota Duluth
                 </div>
                 <div className='message'>
+                    Algorithms and Data Structures Enthusiast.
+                </div>
+                <div className='message'>
                     Always eager to learn.
                 </div>
             </div>
