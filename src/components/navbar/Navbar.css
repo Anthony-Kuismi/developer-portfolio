@@ -2,31 +2,31 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-}
-
 hr{
     margin: 0;
     padding: 0;
-    background-color: #003C43;
-    border-color: #003C43;
+    background-color: #950740;
+    border-color: #950740;
     height: 0.25rem;
     width: 100%;
 }
 
 .nav {
-    background-color: #1a1a1a;
-    color: #003C43;
+    background-color: #282828;
+    color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     align-self: stretch;
     padding: 0 1rem;
+    text-wrap: nowrap;
 }
 
 .site-title {
+    padding: 0;
+    margin: 0.5rem;
     font-size: 2rem;
+    font-family: "Playfair Display", serif;
 }
 
 .nav ul {
@@ -35,6 +35,8 @@ hr{
     list-style: none;
     display: flex;
     gap: 1rem;
+    width: 100%;
+    justify-content: end;
 }
 
 .nav a{
@@ -48,18 +50,10 @@ hr{
 }
 
 .nav li.active{
-    color: #E3FEF7;
+    color: #C3073F;
 }
 
 .nav li:hover{
-    text-decoration: underline;
-}
-
-.nav .site-title{
-    color: #E3FEF7;
-}
-
-.nav .site-title:hover{
     text-decoration: underline;
 }
 
