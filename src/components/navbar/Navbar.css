@@ -69,3 +69,7 @@ ion-icon{
     font-size: 1.5rem;
     height: 100%;
 }
+
+.nav-link{
+    display: flex;
+}

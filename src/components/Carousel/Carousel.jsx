@@ -1,8 +1,9 @@
 import useEmblaCarousel from 'embla-carousel-react';
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../ProjectCard/ProjectCard';
+import Autoplay from 'embla-carousel-autoplay';
 import './Carousel.css'
 export default function Carousel() {
-    const [emblaRef] = useEmblaCarousel()
+    const [emblaRef] = useEmblaCarousel({loop: true}, [Autoplay({playOnInit: true, delay: 10000})])
 
     return (
         <div className="embla" ref={emblaRef}>

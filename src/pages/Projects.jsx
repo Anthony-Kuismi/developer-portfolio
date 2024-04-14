@@ -1,5 +1,5 @@
 import './Projects.css'
-import Carousel from '../components/Carousel';
+import Carousel from '../components/Carousel/Carousel';
 
 export default function Projects(){
 
