@@ -3,29 +3,14 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-}
-
-section{
-    display: grid; 
-    place-items: center;
-    align-content: center;
-    min-height: 50vh;
-}
-
-.scroll-container{
-    background-color: #434350;
-    border: solid #950740 0.2rem;
-    border-style: outset;
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: "Roboto Slab", serif;
 }
 
 .page-title{
     align-self: center;
     font-size: 4rem;
+    font-family: "Playfair Display", serif;
 }

@@ -19,7 +19,7 @@ export default function Navbar(){
                     <a href='https://github.com/Anthony-Kuismi' target='_blank'>GitHub</a>
                 </ul>
             </nav>
-            <hr/>
+            <hr></hr>
         </div>
     );
 }

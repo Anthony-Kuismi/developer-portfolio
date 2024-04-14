@@ -5,15 +5,13 @@
 hr{
     margin: 0;
     padding: 0;
-    background-color: #950740;
-    border-color: #950740;
-    height: 0.25rem;
-    width: 100%;
+    background-color: #00754B;
+    border-color: #00754B;
+    height: 0.1rem;
+    width: 90%;
 }
 
 .nav {
-    background-color: #434350;
-    color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -52,7 +50,9 @@ hr{
 }
 
 .nav li.active{
-    color: #C3073F;
+    color: #00754B;
+    text-decoration: underline;
+    text-decoration-thickness: .1rem;
 }
 
 .nav a:hover{
