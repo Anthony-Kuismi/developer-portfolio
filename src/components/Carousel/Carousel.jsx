@@ -19,7 +19,7 @@ export default function Carousel() {
                     />
                 </div>
                 <div className="embla__slide">
-                    <ProjectCard title='Sorting Algorithms' link='https://google.com'
+                    <ProjectCard title='Sorting Algorithms' link='/developer-portfolio/projects/sorting/'
                         description='Heap Sort, Quick Sort(regular and random), Merge Sort'
                     />
                 </div>

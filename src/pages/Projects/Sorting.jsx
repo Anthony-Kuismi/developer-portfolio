@@ -1,7 +1,7 @@
+import VisualArray from "../../components/VisualArray";
+
 export default function Sorting(){
     return(
-        <div>
-            Sorting
-        </div>
+        <VisualArray/>
     );
 }

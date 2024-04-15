@@ -1,0 +1,15 @@
+.array-container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-top: 3rem;
+    gap: 0rem;
+    width: 90%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.array-container div{
+    background-color: white;
+}
+
