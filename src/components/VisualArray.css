@@ -9,6 +9,14 @@
     align-items: flex-end;
 }
 
+.sorting-container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
 .array-container div{
     background-color: white;
 }
