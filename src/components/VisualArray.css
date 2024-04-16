@@ -15,9 +15,19 @@
     padding: 0;
     width: 100%;
     flex-direction: column;
+    align-items: center;
 }
 
-.array-container div{
+.left {
+    background-color: red;
+}
+
+.right{
+    background-color: blue;
+}
+
+.none{
     background-color: white;
 }
+
 
