@@ -1,26 +1,45 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+* {
+  margin: 0;
+}
+
+html {
   color-scheme: light dark;
-  background-color: #000000;
-  color: #FFFFFF;
+}
+
+:root {
   background-size: cover;
 
-  font-synthesis: none;
+  --text: #0b1811;
+  --background: #f5faf8;
+  --primary: #59b180;
+  --secondary: #9acdd0;
+  --accent: #83b3c3;
+
+  --ff-base: 'IBM Plex Sans', sans-serif;
+  --ff-accent: 'IBM Plex Sans Condensed', sans-serif;
+
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  padding: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e7f4ed;
+    --background: #050a08;
+    --primary: #4ea676;
+    --secondary: #2f6265;
+    --accent: #3c6c7c;
+  }
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--ff-base);
+  color: var(--text);
 }

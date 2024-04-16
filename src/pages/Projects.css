@@ -6,11 +6,9 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-family: "Roboto Slab", serif;
 }
 
 .page-title{
     align-self: center;
     font-size: 4rem;
-    font-family: "Playfair Display", serif;
 }
