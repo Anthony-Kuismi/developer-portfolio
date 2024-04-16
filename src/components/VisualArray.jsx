@@ -3,7 +3,7 @@ import './VisualArray.css'
 function VisualArray() {
     const divRef = useRef(null);
     const countRef = useRef(null);
-    const speedRef = useRef(null); 
+    const speedRef = useRef(null);
     const height = 20;
     var left = useRef(-1);
     var right = useRef(-1);
@@ -49,6 +49,37 @@ function VisualArray() {
         }
         width.current = 100 / count;
         forceUpdate();
+    }
+
+    function quickSortWrapper() {
+        quickSort(0,array.current.length-1);
+    }
+
+    async function quickSort(p,r){
+        if(p<r){
+            const q = await partition(p,r);
+            await quickSort(p,q-1);
+            await quickSort(q+1,r);
+        }
+    }
+
+    async function partition(p, r) {
+        let x = array.current[p];
+        let i = p;
+        for (let j = p + 1; j <= r; j++) {
+            if (array.current[j] <= x) {
+                i++;
+                left.current = i;
+                right.current = j;
+                let delayres = await delay(speedRef.current.value);
+                swap();
+            }
+        }
+        left.current = i;
+        right.current = p;
+        let delayres = await delay(speedRef.current.value);
+        swap();
+        return i;
     }
 
     const delay = (delayInms) => {
@@ -113,6 +144,7 @@ function VisualArray() {
                 <button type='button' onClick={shuffleArray}>Randomize</button>
                 <button type='button' onClick={populateArray}>Populate</button>
                 <button type='button' onClick={bubbleSort}>BubbleSort</button>
+                <button type='button' onClick={quickSortWrapper}>quickSort</button>
             </div>
             <div className='slider-div'>
                 <input type='range' min='10' max='1000' ref={countRef}></input>
