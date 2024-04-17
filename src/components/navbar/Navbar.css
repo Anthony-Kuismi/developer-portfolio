@@ -5,8 +5,8 @@
 hr{
     margin: 0;
     padding: 0;
-    background-color: var(--secondary);
-    border-color: var(--secondary);
+    background-color: var(--accent);
+    border-color: var(--accent);
     height: 0.1rem;
     width: 90%;
 }

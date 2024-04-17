@@ -12,14 +12,6 @@ export default function Navbar() {
                         <NavbarLink to='/developer-portfolio/'>Home</NavbarLink>
                     </div>
                     <div className='nav-link'>
-                        <ion-icon name='folder'></ion-icon>
-                        <NavbarLink to='/developer-portfolio/projects/'>Projects</NavbarLink>
-                    </div>
-                    <div className='nav-link'>
-                        <ion-icon name='information-circle'></ion-icon>
-                        <NavbarLink to='/developer-portfolio/about-me/'>About Me</NavbarLink>
-                    </div>
-                    <div className='nav-link'>
                         <ion-icon name='logo-linkedin'></ion-icon>
                         <a href='https://www.linkedin.com/in/anthony-kuismi' target='_blank'>LinkedIn</a>
                     </div>

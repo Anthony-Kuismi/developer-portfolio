@@ -1,0 +1,25 @@
+.project{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title{
+    font-family: var(--ff-accent);
+    color: var(--secondary);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.project-link{
+    color: var(--accent);
+    text-decoration: none;
+    border: outset var(--primary);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 0.2rem;
+    align-self: flex-end;
+}
+
+.tech-stack{
+    color: var(--accent);
+}

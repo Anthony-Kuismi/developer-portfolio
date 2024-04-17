@@ -1,25 +1,75 @@
-.title{
-    font-size: 5rem;
-    font-family: var(--ff-accent);
-}
-
-.subtitle{
-    font-size: 2rem;
-}
-
-.message{
-    font-size: 1.5rem;
-}
-
 .home-container{
-    align-items: center;
-    justify-content: center;
+    padding-top: 4rem;
+    width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .main-container{
-    align-items: center;
-    width: 75%;
-    justify-content: center;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 80%;
+    row-gap: 8rem;
+}
+
+.intro-container{
+    grid-column: 1 / span 9;
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.name{
+    font-family: var(--ff-accent);
+    font-size: 8rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.major{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+.message{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.about-container{
+    grid-column: 4 / span 12;
+}
+
+.tech-container{
+    grid-column: 1 / span 9;
+}
+
+.experience-container{
+    grid-column: 4 / span 12;
+}
+
+.spacer {
+    grid-column: 1 / span 12;
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent);
+    border-color: var(--accent);
+    height: 0.1rem;
+    width: 100%;
+}
+
+.header{
+    font-family: var(--ff-accent);
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.footer{
+    height: 10rem;
 }
