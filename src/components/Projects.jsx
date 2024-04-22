@@ -6,7 +6,7 @@ export default function Projects() {
         <div className='projects-container'>
             <div className='header'>Projects</div>
             <div className='projects'>
-                <ProjectCard title='Food Tracker'>
+                <ProjectCard title='Food Tracker' tech={{ dart: true, flutter: true, firebase: true }}>
                     Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -16,7 +16,7 @@ export default function Projects() {
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum.
                 </ProjectCard>
-                <ProjectCard title='Rocketry Internal App'>
+                <ProjectCard title='Rocketry Internal App' tech={{ javascript: true, react: true, css: true, html: true, heroku: true }}>
                     Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -26,7 +26,7 @@ export default function Projects() {
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum.
                 </ProjectCard>
-                <ProjectCard title='Algorithm Visualizer' link='/developer-portfolio/projects/sorting/'>
+                <ProjectCard title='Algorithm Visualizer' link='/developer-portfolio/projects/sorting/' tech={{ javascript: true, react: true, css: true, html: true, vite: true }} >
                     Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -37,6 +37,6 @@ export default function Projects() {
                     deserunt mollit anim id est laborum.
                 </ProjectCard>
             </div>
-        </div>
+        </div >
     );
 }
